@@ -56,6 +56,41 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, "onCreate: "+ e.toString());
         }
 
+        mMainActivityViewModel.getIsUpdating().observe(this, new Observer<Boolean>() {
+            @Override
+            public void onChanged(@Nullable Boolean aBoolean) {
+                if(aBoolean){
+                   showProgressBar();
+                }
+                else {
+                    hideProgressBar();
+                    mRecyclerView.smoothScrollToPosition(mMainActivityViewModel.getNicePlaces().getValue().size()-1);
+                }
+            }
+        });
+
+        try{
+            mFab.setOnClickListener(new View.OnClickListener() {
+                /**
+                 * Called when a view has been clicked.
+                 *
+                 * @param v The view that was clicked.
+                 */
+                @Override
+                public void onClick(View v) {
+                    mMainActivityViewModel.addNewValue(
+                            new NicePlace(
+                                    "https://i.imgur.com/ZcLLrkY.jpg",
+                                    "Washington")
+                    );
+                }
+            });
+        }
+        catch (Exception e)
+        {
+            
+        }
+
         initRecyclerView();
     }
 
