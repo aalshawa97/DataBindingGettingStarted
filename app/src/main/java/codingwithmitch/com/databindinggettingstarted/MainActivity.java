@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 
@@ -41,27 +42,27 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mMainActivityViewModel = ViewModelProviders.of(this).get(MainActivityViewModel.class);
+        try{
 
+        mMainActivityViewModel = ViewModelProviders.of(this).get(MainActivityViewModel.class);
         mMainActivityViewModel.getNicePlaces().observe(this, new Observer<List<NicePlace>>() {
-            /**
-             * Called when the data is changed.
-             *
-             * @param nicePlaces The new data
-             */
             @Override
             public void onChanged(@Nullable List<NicePlace> nicePlaces) {
                 mAdapter.notifyDataSetChanged();
             }
         });
+        }
+        catch (Exception e){
+            Log.d(TAG, "onCreate: "+ e.toString());
+        }
 
         initRecyclerView();
     }
 
     private void initRecyclerView() {
-        mAdapter = new RecyclerAdapter(this, (ArrayList<NicePlace>) mMainActivityViewModel.getNicePlaces().getValue());
-        RecyclerView.LayoutManager linearLayoutManager = new LinearLayoutManager(this);
         try{
+            mAdapter = new RecyclerAdapter(this, (ArrayList<NicePlace>) mMainActivityViewModel.getNicePlaces().getValue());
+            RecyclerView.LayoutManager linearLayoutManager = new LinearLayoutManager(this);
             mRecyclerView.setLayoutManager(linearLayoutManager);
             mRecyclerView.setAdapter(mAdapter);
         }
