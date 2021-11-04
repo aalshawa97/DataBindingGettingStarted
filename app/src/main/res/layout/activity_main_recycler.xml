@@ -12,7 +12,10 @@
 
     <androidx.core.widget.ContentLoadingProgressBar
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
 
     </androidx.core.widget.ContentLoadingProgressBar>
 
@@ -21,9 +24,9 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:layout_gravity="end"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/string_add" />
+        android:contentDescription="@string/string_add"
+        android:src = "@drawable/ic_add_white_24dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

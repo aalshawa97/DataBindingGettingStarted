@@ -7,7 +7,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.*;
 
+import codingwithmitch.com.databindinggettingstarted.MainActivity;
+import codingwithmitch.com.databindinggettingstarted.models.NicePlace;
+
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+
+    public RecyclerAdapter(MainActivity mainActivity, ArrayList<NicePlace> nicePlaces) {
+    }
 
     @NonNull
     @Override
