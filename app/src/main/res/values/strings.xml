@@ -6,4 +6,10 @@
 
     <!-- Strings -->
     <string name="dialog_quantity_title">Qty: </string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="price">Price</string>
+    <string name="product">Product</string>
+    <string name="quantity">Quantity</string>
+    <string name="add">add</string>
+    <string name="string_add">add</string>
 </resources>
