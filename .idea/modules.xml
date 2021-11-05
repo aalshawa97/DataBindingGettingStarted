@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidStudioProjects-DataBindingGettingStarted.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidStudioProjects-DataBindingGettingStarted.iml" group="DataBindingGettingStarted" />
-      <module fileurl="file://$PROJECT_DIR$/DataBindingGettingStarted.iml" filepath="$PROJECT_DIR$/DataBindingGettingStarted.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DataBindingGettingStarted-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DataBindingGettingStarted-app.iml" group="DataBindingGettingStarted/app" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DataBindingGettingStarted.iml" filepath="$PROJECT_DIR$/.idea/modules/DataBindingGettingStarted.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DataBindingGettingStarted.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DataBindingGettingStarted.app.iml" />
     </modules>
   </component>
 </project>
