@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DataBindingGettingStarted.iml" filepath="$PROJECT_DIR$/.idea/modules/DataBindingGettingStarted.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DataBindingGettingStarted.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DataBindingGettingStarted.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DataBindingExample.iml" filepath="$PROJECT_DIR$/.idea/modules/DataBindingExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DataBindingExample.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DataBindingExample.app.iml" />
     </modules>
   </component>
 </project>

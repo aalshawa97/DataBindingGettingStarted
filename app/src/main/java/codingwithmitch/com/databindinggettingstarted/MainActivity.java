@@ -1,14 +1,16 @@
 package codingwithmitch.com.databindinggettingstarted;
 
-import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
+
+import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.FragmentActivity;
 
 import codingwithmitch.com.databindinggettingstarted.databinding.ActivityMainBinding;
 import codingwithmitch.com.databindinggettingstarted.models.Product;
 import codingwithmitch.com.databindinggettingstarted.util.Products;
 
-public class MainActivity extends AppCompatActivity implements IMainActivity {
+public class MainActivity extends FragmentActivity implements IMainActivity {
 
     //data binding
     ActivityMainBinding mBinding;
